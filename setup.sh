@@ -1,0 +1,5 @@
+export DATABASE_URL="postgres://xjmiarnlxrostw:7c2a6e0214069dd232b605665637a37b1b61c25a8e0387074b82c2d114e9608b@ec2-3-217-113-25.compute-1.amazonaws.com:5432/desvn50uop2v4q"
+export AUTH0_DOMAIN="dev-0b4j5xak.us.auth0.com"
+export API_AUDIENCE="movie-agency-app"
+export CLIENT_SECRET="Bj9EZz-sHhK4eN7RapdlJCWDBapv-U3KT4pH6wDiFQv5k60CGGvvwGfuMewCmXVq"
+export PASSWORD="gL7TO01jLlyR"
