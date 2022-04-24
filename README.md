@@ -2,6 +2,19 @@
 ## Summary
 The application deployed in Heroku (and running locally) uses Auth0 authentication and RBAC to allow Create, Read, Update, Delete (CRUD) operations on movies and actors.
 
+## Motivation
+As part of this project, I learned python flask framework, decorators, object oriented class design. This application is deployed in Heroku. I learned Heroku deployment and also Role Based Access Control (RBAC) using Auth0.
+
+## Technolgies
+
+- Python 3.10
+- Python Flask - Web server for hosting web apps.
+- PostgreSQL - RDBMS for storing the data.
+- SQL Alchemy - Python library to communicate with PostgreSQL.
+- Heroku - Web application hosting platform.
+- Auth0 - Platform to provide authentication, authorization and RBAC.
+
+
 ## Getting Starting
 
 ### 1. Installing all dependencies, setting the environment variables and running the server locally
