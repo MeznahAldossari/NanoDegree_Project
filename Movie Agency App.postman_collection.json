@@ -1,0 +1,525 @@
+{
+	"info": {
+		"_postman_id": "91716968-5391-4cf0-8297-e51cd86814f4",
+		"name": "Movie Agency App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Casting Assistant Token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"postman.setEnvironmentVariable(\"token\", jsonData.access_token);",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "BJLFQ64lD810hyy25gVb9m6aeKWgzC7N",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "assistant@example.com",
+							"type": "text"
+						},
+						{
+							"key": "audience",
+							"value": "movie-agency-app",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "gL7TO01jLlyR",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "Bj9EZz-sHhK4eN7RapdlJCWDBapv-U3KT4pH6wDiFQv5k60CGGvvwGfuMewCmXVq",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://dev-0b4j5xak.us.auth0.com/oauth/token",
+					"protocol": "https",
+					"host": [
+						"dev-0b4j5xak",
+						"us",
+						"auth0",
+						"com"
+					],
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Casting Director Token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"postman.setEnvironmentVariable(\"token\", jsonData.access_token);",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "BJLFQ64lD810hyy25gVb9m6aeKWgzC7N",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "director@example.com",
+							"type": "text"
+						},
+						{
+							"key": "audience",
+							"value": "movie-agency-app",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "gL7TO01jLlyR",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "Bj9EZz-sHhK4eN7RapdlJCWDBapv-U3KT4pH6wDiFQv5k60CGGvvwGfuMewCmXVq",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://dev-0b4j5xak.us.auth0.com/oauth/token",
+					"protocol": "https",
+					"host": [
+						"dev-0b4j5xak",
+						"us",
+						"auth0",
+						"com"
+					],
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Executive Producer Token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"postman.setEnvironmentVariable(\"token\", jsonData.access_token);",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "BJLFQ64lD810hyy25gVb9m6aeKWgzC7N",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "producer@example.com",
+							"type": "text"
+						},
+						{
+							"key": "audience",
+							"value": "movie-agency-app",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "gL7TO01jLlyR",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "Bj9EZz-sHhK4eN7RapdlJCWDBapv-U3KT4pH6wDiFQv5k60CGGvvwGfuMewCmXVq",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://dev-0b4j5xak.us.auth0.com/oauth/token",
+					"protocol": "https",
+					"host": [
+						"dev-0b4j5xak",
+						"us",
+						"auth0",
+						"com"
+					],
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New Actor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"xyz\",\n    \"lastName\": \"pq2\",\n    \"sex\": \"Female\",\n    \"age\": 45,\n    \"city\": \"LA\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://movie-agency-app.herokuapp.com/api/actor",
+					"protocol": "https",
+					"host": [
+						"movie-agency-app",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"actor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Existing Actor Attributes",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"xywe\",\n    \"lastName\": \"Depdfdfp\",\n    \"sex\": \"Male\",\n    \"age\": 48,\n    \"city\": \"New York\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://movie-agency-app.herokuapp.com/api/actor/8",
+					"protocol": "https",
+					"host": [
+						"movie-agency-app",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"actor",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Actor",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://movie-agency-app.herokuapp.com/api/actor/8",
+					"protocol": "https",
+					"host": [
+						"movie-agency-app",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"actor",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Existing Actor (Singular)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://movie-agency-app.herokuapp.com/api/actor/1",
+					"protocol": "https",
+					"host": [
+						"movie-agency-app",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"actor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Existing Actors (Plural)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://movie-agency-app.herokuapp.com/api/actor",
+					"protocol": "https",
+					"host": [
+						"movie-agency-app",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"actor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actor Movie Relationship",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://movie-agency-app.herokuapp.com/api/actor/4/movie/4",
+					"protocol": "https",
+					"host": [
+						"movie-agency-app",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"actor",
+						"4",
+						"movie",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New Movie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"movieName\": \"Test5\",\n    \"category\": \"Horror\",\n    \"releaseDate\": \"2018-01-01\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://movie-agency-app.herokuapp.com/api/movie",
+					"protocol": "https",
+					"host": [
+						"movie-agency-app",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Existing Movie Attributes",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"movieName\": \"Alice in Wonderland\",\n    \"category\": \"Thriller\",\n    \"releaseDate\": \"1977-01-01\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://movie-agency-app.herokuapp.com/api/movie/3",
+					"protocol": "https",
+					"host": [
+						"movie-agency-app",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"movie",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Movie",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://movie-agency-app.herokuapp.com/api/movie/2",
+					"protocol": "https",
+					"host": [
+						"movie-agency-app",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"movie",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Existing Movie (Singular)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://movie-agency-app.herokuapp.com/api/movie/3",
+					"protocol": "https",
+					"host": [
+						"movie-agency-app",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"movie",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Existing Movies (Plural)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://movie-agency-app.herokuapp.com/api/movie",
+					"protocol": "https",
+					"host": [
+						"movie-agency-app",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"movie"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
